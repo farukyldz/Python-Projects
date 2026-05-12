@@ -1,35 +1,35 @@
 import random
-Liste=["Taş","Kağıt","Makas"]
-pc=random.choice(Liste)
-player=input("[Taş,Kağıt,Makas]").capitalize()
+List=["stone","paper","scissors"]
+pc=random.choice(List)
+player=input("[stone,paper,scissors]").capitalize()
 
-print("Bilgisayar",pc,"üretti sen",player,"ürettin")
+print("Computer",pc,"produced your",player,"produced")
 
 
 
 if pc==player:
-    print("Berabere")
+    print("draw")
 
 
-if pc=="Taş" and player=="Makas":
-    print("Kaybettiniz..")
+if pc=="stone" and player=="scissors":
+    print("You lost..")
 
-if pc=="Kağıt" and player=="Taş":
-    print("Kaybettiniz..")
+if pc=="scissors" and player=="stone":
+    print("You lost..")
 
-if pc=="Makas" and player=="Kağıt":
-    print("Kaybettiniz..")
+if pc=="scissors" and player=="paper":
+    print("You lost..")
 
 
 
-if pc=="Makas" and player=="Taş":
-    print("Kazandınız..")
+if pc=="scissors" and player=="stone":
+    print("You win..")
 
-if pc=="Taş" and player=="Kağıt":
-    print("Kazandınız..")
+if pc=="stone" and player=="paper":
+    print("You win..")
 
-if pc=="Kağıt" and player=="Makas":
-    print("Kazandınız..")    
+if pc=="paper" and player=="scissors":
+    print("You win..")    
 
 else:
-    print("Liste dışı seçim yaptınız.")
+    print("You have selected an option not on the list.")
