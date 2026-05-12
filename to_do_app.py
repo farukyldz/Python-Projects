@@ -36,8 +36,8 @@ while True:
                 print(i, "-", task)
                 
     elif choise == "4":
-        print("Program kapatıldı.")
+        print("The programme has been cancelled.")
         break
     else:
-        print("Geçersiz seçim.")
+        print("Invalid selection.")
         
